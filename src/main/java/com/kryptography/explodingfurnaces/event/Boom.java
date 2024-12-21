@@ -22,8 +22,8 @@ public class Boom {
             IItemHandler inventory = new PlayerMainInvWrapper(player.getInventory());
             for (int i = 0; i < inventory.getSlots(); i++)
                 if(inventory.getStackInSlot(i).getItem() == ItemInit.HOT_GUNPOWDER.get()) {
-                    level.explode(null, player.getX(), player.getY(), player.getZ(), 4.0F, Level.ExplosionInteraction.TNT);
                     inventory.extractItem(i, inventory.getSlotLimit(i), false);
+                    level.explode(null, player.getX(), player.getY(), player.getZ(), 4.0F, Level.ExplosionInteraction.TNT);
                 }
         }
     }
