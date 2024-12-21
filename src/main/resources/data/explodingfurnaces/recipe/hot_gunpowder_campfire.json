@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "cookingtime": 300,
+  "ingredient": {
+    "item": "minecraft:gunpowder"
+  },
+  "result": {
+    "id": "explodingfurnaces:hot_gunpowder"
+  }
+}

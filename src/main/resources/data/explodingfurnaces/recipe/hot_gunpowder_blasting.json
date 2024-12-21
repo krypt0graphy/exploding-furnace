@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "group": "misc",
+  "ingredient": {
+    "item": "minecraft:gunpowder"
+  },
+  "result": {
+    "id": "explodingfurnaces:hot_gunpowder"
+  }
+}

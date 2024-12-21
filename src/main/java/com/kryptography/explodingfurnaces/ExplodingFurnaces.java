@@ -2,17 +2,16 @@ package com.kryptography.explodingfurnaces;
 
 
 import com.kryptography.explodingfurnaces.registry.ItemInit;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
+
+
 
 @Mod(ExplodingFurnaces.MODID)
 public class ExplodingFurnaces {
     public static final String MODID = "explodingfurnaces";
 
-    public ExplodingFurnaces() {
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+    public ExplodingFurnaces(IEventBus bus) {
         ItemInit.ITEMS.register(bus);
     }
 }
